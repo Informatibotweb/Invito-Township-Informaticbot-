@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benvenuti su Township</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            width: 90%;
+            max-width: 700px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            animation: slideIn 1s ease-in-out;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+
+        .photo {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .photo:hover {
+            transform: scale(1.05);
+        }
+
+        .code-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            font-size: 1.4rem;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in forwards;
+        }
+        
+        .foto-link-google {
+            width: 675px;
+            border-radius: 15px;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .foto-link-google:hover {
+            transform: scale(1.1);
+            box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-100%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .foto-link-google {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Benvenuti!</h1>
+        <img class="photo" <img src="township.jpg" alt="township.jpg">
+        <p>Da ora, quando arrivi al livello 19 puoi trovarci sul bellissimo gioco di TOWNSHIP per avere news su di noi.</p>
+        <p>Ecco il codice di accesso alla cooperativa di Informaticbot su Township:</p>
+
+        <a href="https://play.google.com/store/apps/details?id=com.playrix.township" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="foto-link-google">
+        </a>
+
+        <a href="https://apps.apple.com/it/app/township/id638689075" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Download_on_the_App_Store_Badge_IT_RGB_blk.svg" alt="App Store" class="foto-link-google">
+        </a>    
+
+        <div class="code-box">
+            #ahmed il codice non me lo ricordo te lo mando dopo tutta sta roba che ti ho scritto qua cancellala e mettici il codice
+        </div>
+    </div>
+</body>
+</html>
